@@ -14,23 +14,20 @@ body {
 }
 
 .logo {
-    height: 60px;   /* adjust as needed */
+    height: 60px;
     width: auto;
 }
 
-.brand {
-    font-size: 28px;
-    font-weight: bold;
-}
-
 .nav a {
-    line-height: 60px; /* matches the logo height */
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    line-height: 60px; /* centers the nav vertically */
 }
 
 .nav a:hover {
     color: #0077cc;
-}
-
 .divider {
     margin: 20px auto;
     width: 90%;
