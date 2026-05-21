@@ -6,8 +6,15 @@ body {
 }
 
 .header {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo {
+    height: 60px;   /* adjust as needed */
+    width: auto;
 }
 
 .brand {
