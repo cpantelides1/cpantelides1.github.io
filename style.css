@@ -23,11 +23,12 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: 500;
-    line-height: 60px; /* centers the nav vertically */
+    line-height: 60px; /* key fix */
 }
 
 .nav a:hover {
     color: #0077cc;
+}
 .divider {
     margin: 20px auto;
     width: 90%;
