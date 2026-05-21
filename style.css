@@ -22,8 +22,11 @@ body {
     font-weight: bold;
 }
 
-.nav {
-    margin-top: 15px;
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
 }
 
 .nav a {
