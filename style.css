@@ -16,34 +16,20 @@ body {
     background: #fff;
 }
 
-/* LOGO + SUBTITLE BLOCK */
-.brand-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
+/* LOGO ONLY (subtitle removed) */
 .logo {
-    height: 80px; /* increased for visibility */
+    height: 95px; /* enlarged but safe */
     width: auto;
-}
-
-.logo-subtitle {
-    font-size: 16px;
-    font-weight: 600;
-    color: #111;
-    margin-top: 8px;
-    letter-spacing: 0.8px;
 }
 
 /* NAVIGATION */
 .nav a {
-    margin: 0 20px;
+    margin: 0 22px;
     text-decoration: none;
     color: #000;
     font-weight: 500;
     font-size: 17px;
-    line-height: 80px; /* aligns nav with logo height */
+    line-height: 95px; /* aligns nav with logo height */
     transition: 0.2s ease;
 }
 
