@@ -26,8 +26,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 12px; /* or whatever you currently have */;
-    margin-left: 30px; /* pushes About Us to the right */
+    gap: 12px;
+    margin-left: 30px;
 }
 
 nav a {
