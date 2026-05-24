@@ -22,33 +22,18 @@ body {
 }
 
 .crest-logo {
-  width: 385px;
-  margin-bottom: 40px;
+  width: 180px;
+  margin-bottom: 30px;
 }
 
-.mansion-wrapper {
-  width: 900px;
-  margin: 0 auto;
-  position: relative;
-  border: 1px solid var(--silver);
+/* FULL-WIDTH IVORY BANNER */
+
+.banner-strip {
+  width: 100%;
   background: var(--ivory);
-}
-
-.mansion-banner {
-  width: 100%;
-  display: block;
-  filter: brightness(0.92);
-}
-
-/* MENU STRIP */
-
-.menu-strip {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(248, 245, 240, 0.7);
-  padding: 18px 0;
   border-top: 1px solid var(--silver);
+  border-bottom: 1px solid var(--silver);
+  padding: 18px 0;
 }
 
 .main-nav ul {
@@ -56,8 +41,9 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 28px;
+  padding-left: 40px;
 }
 
 .main-nav a {
@@ -183,13 +169,17 @@ body {
 
 /* MOBILE */
 
-@media (max-width: 960px) {
-  .mansion-wrapper {
-    width: 90%;
-  }
-}
-
 @media (max-width: 768px) {
+  .crest-logo {
+    width: 140px;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-left: 20px;
+  }
+
   .section {
     flex-direction: column;
   }
