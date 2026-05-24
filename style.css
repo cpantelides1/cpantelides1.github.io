@@ -28,6 +28,14 @@ nav {
     height: 200px;
     length: 100px
 }
+@media (max-width: 768px) {
+  .logo-container, .logo-img {
+    max-width: 160px; /* Adjust based on asset proportions */
+    height: auto;
+    display: block;
+    padding: 5px 0;
+  }
+}
 
 nav ul {
     list-style: none;
