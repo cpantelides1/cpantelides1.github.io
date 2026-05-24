@@ -18,7 +18,12 @@ nav {
     z-index: 10;
     border-bottom: 1px solid #ddd;
 }
-
+.your-navigation-container-class {
+    display: flex;
+    justify-content: center; /* This moves the links to the center */
+    align-items: center;     /* This keeps them vertically centered */
+    width: 100%;             /* Ensures the container spans across the space */
+}
 .nav-logo {
     height: 200px;
     length: 100px
