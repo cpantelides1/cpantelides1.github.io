@@ -105,10 +105,13 @@ body {
 
 /* CONTACT */
 
-.contact-section {
-  background: url('contact-bg.png') center/cover no-repeat;
-  padding: 80px 20px;
-  color: var(--ivory);
+.contact-section a {
+  color: var(--ivory) !important;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
 }
 
 .contact-overlay {
