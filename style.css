@@ -18,37 +18,9 @@ nav {
     z-index: 10;
     border-bottom: 1px solid #ddd;
 }
-.your-navigation-container-class {
-    display: flex;
-    justify-content: center; /* This moves the links to the center */
-    align-items: center;     /* This keeps them vertically centered */
-    width: 100%;             /* Ensures the container spans across the space */
-}
-.nav-logo {
-    height: 200px;
-    length: 100px
-}
-@media (max-width: 768px) {
-  .logo-container, .logo-img {
-    max-width: 160px; /* Adjust based on asset proportions */
-    height: auto;
-    display: block;
-    padding: 5px 0;
-}
-@media (max-width: 768px) {
-  /* Prevent horizontal items from overlapping or wrapping ugly */
-  .top-right-nav {
-    display: flex;
-    flex-direction: column; /* Stacks links vertically if using an open tray */
-    align-items: flex-end;
-    gap: 12px;
-  }
 
-  /* Make sure individual headings are small enough to sit nicely */
-  .top-right-nav a, .top-right-nav h2, .top-right-nav h3 {
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
+.nav-logo {
+    height: 60px;
 }
 
 nav ul {
