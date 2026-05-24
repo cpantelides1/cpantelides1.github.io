@@ -1,230 +1,196 @@
 :root {
-  --primary-text: #111111;
-  --accent: #1f3b5c;
-  --light-gray: #f5f5f5;
-  --white: #ffffff;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  --ivory: #F8F5F0;
+  --black: #000000;
+  --charcoal: #1A1A1A;
+  --silver: #C8C8C8;
+  --graphite: #2B2B2B;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--primary-text);
-  background-color: var(--white);
-  line-height: 1.6;
+  background: var(--ivory);
+  color: var(--black);
+  font-family: 'Spectral', serif;
+  line-height: 1.65;
 }
 
-/* Header & logos */
+/* HEADER */
 
-.site-header {
-  padding: 1rem 1.5rem 0.5rem;
+.header-container {
+  text-align: center;
+  padding-top: 40px;
 }
 
-.logo-stack {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.75rem;
+.crest-logo {
+  width: 160px;
+  margin-bottom: 40px;
 }
 
-.logo-main {
-  max-width: 220px;
-  height: auto;
+.mansion-wrapper {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid var(--silver);
+  background: var(--ivory);
 }
 
-.logo-secondary {
-  max-width: 260px;
-  height: auto;
+.mansion-banner {
+  width: 100%;
   display: block;
+  filter: brightness(0.92);
 }
 
-.secondary-logo-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
+/* MENU STRIP */
 
-/* Navigation */
+.menu-strip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(248, 245, 240, 0.7);
+  padding: 18px 0;
+  border-top: 1px solid var(--silver);
+}
 
 .main-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
+  justify-content: center;
+  gap: 28px;
 }
 
 .main-nav a {
-  text-decoration: none;
-  color: var(--primary-text);
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
+  font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--black);
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
 }
 
 .main-nav a:hover {
-  color: var(--accent);
+  border-bottom: 1px solid var(--silver);
 }
 
-/* Sections */
+/* SECTIONS */
 
 .section {
-  padding: 3rem 1.5rem;
-}
-
-.section-split {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  gap: 40px;
   align-items: center;
-  justify-content: center;
 }
 
-.section-split .section-text,
-.section-split .section-image {
-  flex: 1 1 320px;
-  max-width: 600px;
+.framed-section {
+  border: 1px solid var(--silver);
+  background: var(--ivory);
 }
 
-.section-text h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.section-text p {
-  margin-top: 0;
-  margin-bottom: 0.9rem;
-}
-
-.section-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-
-/* Reverse layout */
-
-.section-split.reverse {
+.reverse {
   flex-direction: row-reverse;
 }
 
-/* Contact section */
+.text-block {
+  flex: 1;
+}
+
+.text-block h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.image-block {
+  flex: 1;
+}
+
+.image-block img {
+  width: 100%;
+  border: 1px solid var(--silver);
+  display: block;
+}
+
+/* CONTACT */
 
 .contact-section {
-  position: relative;
-  padding: 4rem 1.5rem;
-  color: var(--white);
-  background-color: #333333;
-  background-image: url("contact-bg.png"); /* grey artistic background – update filename */
-  background-size: cover;
-  background-position: center;
+  background: url('contact-bg.png') center/cover no-repeat;
+  padding: 80px 20px;
+  color: var(--ivory);
 }
 
 .contact-overlay {
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.55);
-  padding: 2rem 1.75rem;
-  border-radius: 6px;
+  background: rgba(0,0,0,0.55);
+  padding: 40px;
+  border: 1px solid var(--silver);
 }
 
 .contact-section h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  letter-spacing: 0.04em;
+  font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.8rem;
+  margin-top: 0;
 }
 
 .contact-name {
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.contact-section a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.contact-section a:hover {
-  text-decoration: underline;
 }
 
 .social-links {
-  margin-top: 1.25rem;
+  margin-top: 20px;
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .social-links a {
-  font-size: 0.95rem;
+  color: var(--ivory);
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .policy-buttons {
-  margin-top: 1.75rem;
+  margin-top: 30px;
   display: flex;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 0.75rem;
 }
 
 .policy-buttons button {
-  border: 1px solid var(--white);
   background: transparent;
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  border: 1px solid var(--ivory);
+  color: var(--ivory);
+  padding: 8px 16px;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   cursor: pointer;
 }
 
 .policy-buttons button:hover {
-  background: var(--white);
-  color: #000000;
+  background: var(--ivory);
+  color: var(--black);
 }
 
-/* Responsive tweaks */
+/* MOBILE */
+
+@media (max-width: 960px) {
+  .mansion-wrapper {
+    width: 90%;
+  }
+}
 
 @media (max-width: 768px) {
-  .logo-main {
-    max-width: 180px;
-  }
-
-  .logo-secondary {
-    max-width: 210px;
-  }
-
   .section {
-    padding: 2.5rem 1.25rem;
-  }
-
-  .contact-overlay {
-    padding: 1.75rem 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-nav ul {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .section-text h2,
-  .contact-section h2 {
-    font-size: 1.4rem;
   }
 }
