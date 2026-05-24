@@ -103,15 +103,12 @@ body {
   display: block;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 
-.contact-section a {
-  color: var(--ivory) !important;
-  text-decoration: none;
-}
-
-.contact-section a:hover {
-  text-decoration: underline;
+.contact-section {
+  background: url('contact-bg.png') center/cover no-repeat;
+  padding: 80px 20px;
+  color: var(--ivory);
 }
 
 .contact-overlay {
@@ -136,6 +133,18 @@ body {
   text-transform: uppercase;
 }
 
+/* FIXED EMAIL COLOR — ONLY THIS LINK */
+.contact-section a {
+  color: var(--ivory) !important;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* SOCIAL LINKS */
+
 .social-links {
   margin-top: 20px;
   display: flex;
@@ -147,6 +156,8 @@ body {
   text-decoration: none;
   font-family: 'Cormorant Garamond', serif;
 }
+
+/* POLICY BUTTONS */
 
 .policy-buttons {
   margin-top: 30px;
