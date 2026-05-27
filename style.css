@@ -20,6 +20,13 @@ body {
   text-align: center;
   padding-top: 40px;
 }
+.header {
+    background-image: url('background-corporate-logo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
 
 .crest-logo {
   width: 525px;
