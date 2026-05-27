@@ -26,6 +26,15 @@ body {
   margin-bottom: 30px;
 }
 
+/* === CUSTOM: Marble background behind logo (REMOVE THIS BLOCK TO REVERT) === */
+.header {
+    background-image: url('background-corporate-logo.png'); /* rename to your uploaded file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0; /* adjust spacing if needed */
+}
+
 /* FULL-WIDTH IVORY BANNER */
 
 .banner-strip {
