@@ -198,3 +198,49 @@ body {
     flex-direction: column;
   }
 }
+
+/* ============================================================
+   CUSTOM: Replace white backgrounds with background-corporate-logo2.png
+   REMOVE THIS ENTIRE BLOCK TO REVERT
+   ============================================================ */
+
+:root {
+    --corp-bg: url('background-corporate-logo2.png');
+}
+
+/* Top logo container */
+.header,
+.header-container,
+.logo-box {
+    background-image: var(--corp-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation strip bar */
+.navbar,
+.nav-strip,
+.menu-bar {
+    background-image: var(--corp-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main white content wrapper (About Us, Buying & Selling, etc.) */
+.content,
+.section,
+.page-section,
+.white-section,
+#about-us,
+#buying-selling,
+#exit-planning,
+#our-fees,
+#team-experience,
+#contact-us {
+    background-image: var(background-corporate-logo2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
