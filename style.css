@@ -7,11 +7,9 @@
 }
 
 body {
-  margin: 0;
-  background: var(--ivory);
-  color: var(--black);
-  font-family: 'Spectral', serif;
-  line-height: 1.65;
+    background-image: url('/images/background-corporate-logo3.png');
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 /* HEADER */
