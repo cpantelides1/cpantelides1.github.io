@@ -244,26 +244,36 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-/* ============================================================
-   CUSTOM: Outer wrapper background using background-corporate-logo3.png
-   Applies ONLY to the area between the headings strip and the About Us box
-   REMOVE THIS ENTIRE BLOCK TO REVERT
-   ============================================================ */
-
-.outer-wrapper,
-.main-wrapper,
-.page-container {
+/* Background area between menu bar and About Us box */
+.site-content,
+.content-area,
+.main-content {
     background-image: url('background-corporate-logo3.png');
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 40px;   /* adjust if needed */
-    padding-bottom: 40px;
 }
 
-/* Ensure the inner content (About Us box) stays clean and readable */
-#about-us {
-    background: white;   /* keeps your text readable */
-    padding: 40px;
-    border-radius: 6px;
+/* Optional: keep About Us box clean */
+.entry-content,
+.page-content,
+.content-box {
+    background: #f5f2ee;
+}
+
+If your theme uses different class names, use this more targeted version instead:
+
+/* SECTION BETWEEN NAV BAR AND CONTENT BOX */
+body {
+    background-image: url('background-corporate-logo3.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main content box */
+.site-main,
+.content-wrapper,
+.page-wrapper {
+    background: transparent;
 }
