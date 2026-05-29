@@ -258,20 +258,3 @@ body {
 .content-box {
     background: #f5f2ee;
 }
-
-If your theme uses different class names, use this more targeted version instead:
-
-/* SECTION BETWEEN NAV BAR AND CONTENT BOX */
-body {
-    background-image: url('background-corporate-logo3.png');
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* Main content box */
-.site-main,
-.content-wrapper,
-.page-wrapper {
-    background: transparent;
-}
