@@ -258,3 +258,31 @@ body {
 .content-box {
     background: #f5f2ee;
 }
+/* ============================================================
+   CUSTOM: Fill the gap between headings strip and ABOUT US box
+   with background-corporate-logo4.png
+   REMOVE THIS ENTIRE BLOCK TO REVERT
+   ============================================================ */
+
+:root {
+    --corp-gap-bg: url('background-corporate-logo4.png');
+}
+
+/* The wrapper area between the strip bar and the ABOUT US section */
+.section-gap,
+.page-section-gap,
+.content-wrapper,
+.main-wrapper {
+    background-image: var(--corp-gap-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;   /* adjust if needed */
+    padding-bottom: 20px;
+}
+
+/* If your ABOUT US section has an ID or class, keep it clean */
+#about-us,
+.about-section {
+    background: none; /* ensures the gap background shows around it */
+}
