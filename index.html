@@ -15,6 +15,14 @@ document.querySelectorAll('a[href="#our-fees"]').forEach(a => {
   }
 });
 </script>
+  <!-- TEMP FIX: Correct Team & Experience link -->
+<script>
+document.querySelectorAll('a[href="#our-fees"]').forEach(a => {
+  if (a.textContent.trim().toLowerCase() === "team & experience") {
+    a.setAttribute("href", "#team-experience");
+  }
+});
+</script>
 <body>
 
   <!-- HEADER -->
