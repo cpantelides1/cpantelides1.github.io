@@ -286,3 +286,24 @@ body {
 .about-section {
     background: none; /* ensures the gap background shows around it */
 }
+/* === TEMP: unify main body background with box / strip color === */
+/* Change this color to exactly match your box / trip-heading bar background */
+:root {
+  --tgma-main-bg: #f3f1eb; /* example – replace with your exact color */
+}
+
+/* Make the page background the same as your boxes/strips */
+body {
+  background-color: var(--tgma-main-bg) !important;
+}
+
+/* Remove the white “card” look in the main content area */
+main,
+.wp-site-blocks,
+.entry-content,
+.site-main,
+#primary,
+#content {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
